@@ -38,15 +38,16 @@ Librería de JavaScript de código abierto desarrollada por Meta, enfocada en la
 
 Framework progresivo de Node.js para la construcción de aplicaciones backend eficientes, fiables y altamente escalables. Está construido con TypeScript y aprovecha conceptos de arquitectura modular, inyección de dependencias y patrones inspirados en Angular.
 
-📂 Estructura del Proyecto
+### 📁 Estructura del Proyecto
 
+```text
 .
-├── 01-html-css/         # Prácticas iniciales de maququetación y estilos
-├── 02-javascript/       # Conceptos fundamentales y manipulación del DOM
-├── 03-typescript/       # Tipado, interfaces y programación orientada a objetos
-├── 04-react/            # Componentes, hooks y estado en el frontend
-├── 05-nestjs/           # Controladores, servicios y APIs en el backend
-└── README.md            # Documentación general del repositorio
+├── 01-html-css/        # Prácticas iniciales de maquetación y estilos
+├── 02-javascript/      # Conceptos fundamentales y manipulación del DOM
+├── 03-typescript/      # Tipado, interfaces y POO
+├── 04-react/           # Componentes, hooks y estado en el frontend
+├── 05-nestjs/          # Controladores, servicios y APIs en el backend
+└── README.md           # Documentación general del repositorio
 
 
 🛠️ Requisitos Previos
