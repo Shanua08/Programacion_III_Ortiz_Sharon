@@ -60,4 +60,4 @@ npm o yarn
 
 Git
 
-✨ Repositorio de Sharon Ortiz.
+✨ Sharon Ortiz.
