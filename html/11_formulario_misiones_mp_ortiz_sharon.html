@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Servicios - Línea de Taxi</title>
+</head>
+
+<body>
+    <header>
+        <h1>Central de Taxis Express</h1>
+        <p>Registro y solicitud de servicios</p>
+    </header>
+
+    <hr>
+    
+    <main>
+        <form action="#" method="get" id="registro-servicios">
+            <fieldset>
+                <legend>Información del servicio</legend>
+                <label for="codigo">
+                    Código de servicio:
+                </label>
+                <input type="text" id="codigo" name="codigo" placeholder="TAXI-001" maxlength="10" required>
+                
+                <br><br>
+                
+                <label for="responsable">
+                    Conductor asignado:
+                </label>
+                <select id="responsable" name="responsable" required>
+                    <option value="">
+                        Selecciona un conductor
+                    </option>
+                    <option value="carlos">
+                        Carlos Mendoza
+                    </option>
+                    <option value="juan">
+                        Juan Pérez
+                    </option>
+                    <option value="luis">
+                        Luis Gómez
+                    </option>
+                </select>
+
+                <br><br>
+
+                <label for="planeta">
+                    Destino o zona de llegada:
+                </label>
+                <input type="text" id="planeta" name="destino" placeholder="Ej. Base Norte" required>
+                
+                <br><br>
+                
+                <label for="fecha">
+                    Fecha y hora del servicio:
+                </label>
+                <input type="date" id="fecha" name="fecha" required>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Características del viaje</legend>
+                <p>Prioridad del servicio:</p>
+                <input type="radio" id="alta" name="prioridad" value="alta" required>
+                <label for="alta">Inmediata</label>
+                <input type="radio" id="media" name="prioridad" value="media">
+                <label for="media">Programada</label>
+                <input type="radio" id="baja" name="prioridad" value="baja">
+                <label for="baja">Corporativa</label>
+
+                <br><br>
+
+                <label for="riesgo">
+                    Nivel de equipaje / pasajeros (1 a 10):
+                </label>
+                <input type="number" id="riesgo" name="capacidad" min="1" max="10" value="2">
+                
+                <p>Recursos y comodidades necesarias:</p>
+                <input type="checkbox" id="nave" name="recursos" value="gps">
+                <label for="nave">
+                    Monitoreo GPS activo
+                </label>
+
+                <br>
+
+                <input type="checkbox" id="droides" name="recursos" value="pet_friendly">
+                <label for="droides">
+                    Adaptado para mascotas (Pet Friendly)
+                </label>
+
+                <br>
+
+                <input type="checkbox" id="equipo" name="recursos" value="factura">
+                <label for="equipo">
+                    Emisión de factura electrónica
+                </label>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Detalles adicionales</legend>
+                <label for="descripcion">
+                    Observaciones o referencias de recogida:
+                </label>
+
+                <br>
+
+                <textarea id="descripcion" name="descripcion" rows="5" cols="45" maxlength="500"
+                    placeholder="Indica referencias exactas..." required></textarea>
+            </fieldset>
+
+            <br>
+
+            <button type="submit">
+                Registrar servicio
+            </button>
+            <button type="reset">
+                Limpiar datos
+            </button>
+        </form>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>
+            <small>
+                Cooperativa de Taxis Express - 2026
+            </small>
+        </p>
+    </footer>
+</body>
+</html>
