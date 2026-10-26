@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9fafb;
+    color: #1f2937;
+}
+
+.portada {
+    background-color: #111827;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.bienvenida {
+    background-color: #fef3c7;
+    color: #92400e;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Media Queries para diseño Responsivo */
+@media (min-width: 768px) {
+    body {
+        background-color: #f3f4f6;
+    }
+    
+    .portada {
+        padding: 80px 40px;
+        font-size: 1.2rem;
+    }
+
+    .bienvenida {
+        padding: 80px 40px;
+        font-size: 1.2rem;
+        background-color: #d1fae5;
+        color: #065f46;
+    }
+}

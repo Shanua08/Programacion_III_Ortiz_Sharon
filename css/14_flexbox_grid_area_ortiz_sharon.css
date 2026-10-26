@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9fafb;
+    margin: 20px;
+    color: #1f2937;
+}
+
+.pagina {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "nav main"
+        "aside main"
+        "footer footer";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 15px;
+    height: 90vh;
+}
+
+header {
+    grid-area: header;
+    background-color: #111827;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #fef3c7;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+nav a {
+    color: #d97706;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #d1fae5;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #374151;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+}

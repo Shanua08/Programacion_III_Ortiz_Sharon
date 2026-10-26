@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9fafb;
+    color: #1f2937;
+}
+
+/* Clases de texto personalizadas */
+.texto-jedi {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.texto-imperio {
+    color: #b91c1c;
+}
+
+/* Tamaños de fuente */
+.texto-40px {
+    font-size: 40px;
+}
+
+.texto-20px {
+    font-size: 20px;
+}
+
+.texto-10px {
+    font-size: 10px;
+}
+
+/* Jerarquías */
+.aprendiz {
+    font-weight: normal;
+}
+
+.caballero {
+    font-weight: bold;
+}
+
+.maestro {
+    font-weight: 900;
+    color: #d97706;
+}
+
+/* Estilos de letra */
+.estilo_letra_normal {
+    font-style: normal;
+}
+
+.estilo_letra_italica {
+    font-style: italic;
+}
+
+/* Alineaciones */
+.izquierda {
+    text-align: left;
+}
+
+.centro {
+    text-align: center;
+}
+
+.derecha {
+    text-align: right;
+}
+
+/* Estados de misiones / servicios */
+.importante {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+.cancelada {
+    color: #6b7280;
+    text-decoration: line-through;
+}
+
+.link {
+    color: #2563eb;
+    text-decoration: underline;
+    display: block;
+    margin: 10px 0;
+}
+
+/* Transformaciones de texto */
+.titulo_mayuscula {
+    text-transform: uppercase;
+}
+
+.titulo_minuscula {
+    text-transform: lowercase;
+}
+
+.titulo_capitulizado {
+    text-transform: capitalize;
+}
+
+/* Interlineado y espacio de letras */
+.espaciado_simple {
+    line-height: 1.2;
+}
+
+.espaciado_doble {
+    line-height: 2.0;
+}
+
+.espacio_letras1 {
+    letter-spacing: 1px;
+}
