@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9fafb;
+    margin: 20px;
+    color: #1f2937;
+}
+
+h1 {
+    color: #111827;
+}
+
+/* Contenedores Flex */
+.contenedor1, .contenedor2, .contenedor3, .contenedor4 {
+    display: flex;
+    background-color: #e5e7eb;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    gap: 10px;
+}
+
+.contenedor1 { justify-content: flex-start; }
+.contenedor2 { justify-content: center; }
+.contenedor3 { justify-content: flex-end; }
+.contenedor4 { justify-content: space-between; }
+
+.personaje {
+    background-color: #fef3c7;
+    color: #d97706;
+    border: 1px solid #f59e0b;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* Escuadrones Flex */
+.escuadrones1, .escuadrones2, .escuadrones3, .escuadrones4, .escuadrones5, .escuadrones6 {
+    display: flex;
+    background-color: #d1fae5;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    gap: 10px;
+}
+
+.escuadrones1 { flex-direction: row; }
+.escuadrones2 { flex-direction: row-reverse; }
+.escuadrones3 { flex-direction: column; height: 150px; }
+.escuadrones4 { flex-direction: column-reverse; height: 150px; }
+.escuadrones5 { flex-wrap: wrap; }
+.escuadrones6 { flex-wrap: wrap-reverse; }
+
+.escuadron {
+    background-color: #047857;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+}
