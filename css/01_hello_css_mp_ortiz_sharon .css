@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9fafb;
+}
+
+h1 {
+    color: #111827;
+}
+
+h3 {
+    color: #047857;
+}
+
+a {
+    color: #2563eb;
+    text-decoration: underline;
+}

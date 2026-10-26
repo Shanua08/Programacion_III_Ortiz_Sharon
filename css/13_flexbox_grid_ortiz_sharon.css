@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9fafb;
+    margin: 20px;
+    color: #1f2937;
+}
+
+h1 {
+    color: #111827;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+/* Grid básico */
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background-color: #e5e7eb;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.consejo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    background-color: #d1fae5;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.operaciones {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 10px;
+    background-color: #dbeafe;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.hangar {
+    display: grid;
+    grid-template-columns: 100px 200px auto;
+    gap: 10px;
+    background-color: #fef3c7;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.flota {
+    display: grid;
+    grid-template-columns: minmax(150px, 1fr) minmax(150px, 1fr) minmax(150px, 1fr);
+    gap: 10px;
+    background-color: #fee2e2;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.consejo2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background-color: #ede9fe;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.naves {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    background-color: #ccfbf1;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.misiones {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    background-color: #fae8ff;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+/* Estilos de elementos internos */
+.personaje, .operacion, .hangar div, .flota div, .naves div, .misiones div {
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.destacada, .mision-principal {
+    background-color: #f59e0b;
+    color: white;
+    grid-column: span 2;
+}
