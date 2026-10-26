@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Conductor / Usuario - Línea de Taxi</title>
+</head>
+<body>
+    <form action="/registro" method="post">
+        <table>
+            <tr>
+                <td>
+                    <label for="nombre">Nombre</label> 
+                    <input type="text" id="nombre" name="nombre">
+                </td>
+                <td>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido">
+                </td>
+                <td>
+                    <label for="password">Password</label><br>
+                    <input type="password" id="password" name="password">
+                </td>
+                <td>
+                    <label for="password_confirm">Confirmar Password</label>
+                    <input type="password" id="password_confirm" name="password_confirm">
+                </td>
+                <td>
+                    <label for="edad">Edad</label>
+                    <input type="number" id="edad" name="edad">
+                </td>
+                <td>
+                    <label for="nivel">Experiencia (Años)</label><br>
+                    <input
+                        type="number"
+                        id="nivel"
+                        name="experiencia"
+                        min="1"
+                        max="20"
+                        value="5"
+                        step="1"
+                    >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Selecciona tu rol:</p>
+                    <input type="radio" id="conductor" name="rol" value="conductor">
+                    <label for="conductor">Conductor</label>
+                    <input type="radio" id="pasajero" name="rol" value="pasajero">
+                    <label for="pasajero">Pasajero</label>
+                </td>
+                <td>
+                    <p>Seleccione sus servicios / preferencias:</p><br>
+                    <input 
+                        type="checkbox"
+                        id="ejecutivo"
+                        name="preferencias"
+                        value="ejecutivo"
+                    >
+                    <label for="ejecutivo">Servicio Ejecutivo</label><br>
+                    <input
+                        type="checkbox"
+                        id="pet"
+                        name="preferencias"
+                        value="pet_friendly"
+                    >
+                    <label for="pet">Pet Friendly</label><br>
+                    <input
+                        type="checkbox"
+                        id="aeropuerto"
+                        name="preferencias"
+                        value="aeropuerto"
+                    >
+                    <label for="aeropuerto">Traslado Aeropuerto</label><br>
+                </td>
+            </tr>
+             <tr>
+                <td>
+                    <label for="zona">Zona de Operación Principal</label><br>
+                    <select id="zona" name="zona" required>
+                        <option value="">
+                            Selecciona una zona 
+                        </option>
+                        <option value="Norte">
+                            Base Norte
+                        </option>
+                        <option value="Centro">
+                            Base Centro
+                        </option>
+                        <option value="Sur">
+                            Base Sur
+                        </option>
+                    </select>
+                </td>
+                <td>
+                    <label for="metodo">Método de Pago Preferido</label><br>
+                    <select id="metodo" name="metodo" multiple size="2">
+                        <option value="">
+                            Selecciona pago 
+                        </option>
+                        <option value="efectivo">
+                            Efectivo
+                        </option>
+                        <option value="transferencia">
+                            Transferencia
+                        </option>
+                    </select>
+                </td>
+            </tr>
+             <tr>
+                <td>
+                    <fieldset>
+                        <legend>Datos generales</legend> 
+                        <label for="viajes">Viajes realizados</label><br>
+                        <input type="number" id="viajes" name="viajes"><br>
+                   </fieldset> 
+                </td>
+            </tr>
+        </table>
+        <button type="submit">Enviar</button> 
+        <button type="reset">Limpiar</button> 
+    </form>
+</body>
+</html>

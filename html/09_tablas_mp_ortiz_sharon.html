@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas - Línea de Taxi</title>
+</head>
+<body>
+    <h1>Tablas en HTML 5</h1>
+<table id="personal_taxis" alt="Personal y Flota de Taxis" border="1">
+    <caption>Cooperativa Taxis Express</caption>
+    <tr>
+        <th colspan="3">Personal y Flota de Taxis Express</th>
+    </tr>
+    <tr>
+        <th>Conductor / Unidad</th>
+        <th>Base de Operación</th>
+        <th>Rol / Categoría</th>
+    </tr>
+    <tr>
+        <td>Carlos Mendoza</td>
+        <td rowspan="2">Base Norte</td>
+        <td>Conductor Ejecutivo</td>
+    </tr>
+    <tr>
+        <td>Juan Pérez</td>
+        <td>Coordinador</td>
+    </tr>
+    <tr>
+        <td>Unidad Móvil 05</td>
+        <td>Base Sur</td>
+        <td>Servicio Activo</td>
+    </tr>
+</table>
+<br>
+<table id="servicios_taxis" alt="Servicios de Taxis" border="1">
+    <caption>Registro de Servicios</caption>
+    <thead>
+        <tr>
+            <th>Conductor</th>
+            <th>Tipo de Servicio</th>
+            <th>Vehículo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Carlos</td>
+            <td>Traslado Aeropuerto</td>
+            <td>Unidad 01</td>
+        </tr>
+        <tr>
+            <td>Juan</td>
+            <td>Encomienda Rápida</td>
+            <td>Unidad 03</td>
+        </tr>  
+    </tbody>
+    <tfoot>
+        <tr>
+            <th colspan="3">total servicios</th>
+            <th> 3</th>
+        </tr>
+    </tfoot>
+</table>
+</body>
+</html>
