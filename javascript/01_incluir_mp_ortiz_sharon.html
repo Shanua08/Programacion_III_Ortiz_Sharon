@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a JavaScript - Línea de Taxis</title>
+    <script>
+        alert('¡Alerta, central! Inicio de la página de la Línea de Taxis');
+        console.log('Saludo desde el inicio de la página de la cooperativa');
+    </script>
+</head>
+<body>
+    <h1>Incluir JavaScript en documento HTML</h1>
+    <h2>Modo Inline (En línea)</h2>
+    
+    <button onclick="alert('¡Unidad solicitada con éxito!')">Solicitar Servicio</button>
+    <br><br>
+
+    <input type="text" oninput="console.log('Escribiendo dirección:', this.value)"
+        placeholder="Escribe la dirección de recogida...">
+    <br><br>
+
+    <input type="text" onchange="console.log('Destino final guardado:', this.value)"
+        placeholder="Escribe el destino y haz clic fuera...">
+    <br><br>
+
+    <input type="text" onfocus="console.log('El usuario hizo clic en las referencias')"
+        onblur="alert('¡Atención, saliste del campo de referencias!')" 
+        placeholder="Haz clic dentro y fuera para probar...">
+
+    <!-- Enlace al archivo de JavaScript externo -->
+    <script src="01_incluir.js"></script>
+</body>
+</html>
